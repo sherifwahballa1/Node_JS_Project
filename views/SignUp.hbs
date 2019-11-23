@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registration</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/signUp.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-title">
+                    <h2>Sign Up</h2>
+                    <hr class="my-4">
+                </div>
+                <div class="card-body">
+                    <form name="myForm" action="/sign_up" method="post" class="myForm" id='myForsm'>
+                        <div class="form-group">
+                            <label for="fullName">Fullname:</label>
+                            <input type="text" required class="form-control" name="txtName" id="txtName">
+                                 <label id="nameError">
+                                     {{errName}}
+                                 </label>
+
+                           
+                        </div>
+                        
+                        <div class="form-group mailDiv">
+                            <label for="Email">Email:</label>
+                            <label id="emailError">{{errEmail}}</label>
+                            <input type="email" required class="form-control" name="txtEmail" id="txtEmail">
+
+                            
+
+                        </div>
+
+                        <div class="form-group passwordDiv">
+                            <label for="psw">Password:</label>
+                            <input type="password" required name="txtPassword" id="txtPassword" class="form-control">
+                          
+                          <label id="passwordError">
+                            {{errPassword}}
+                              </label>
+
+                        </div>
+
+                        <div class="form-group genderDiv">
+                            <label for="psw" style="margin-top: 11px;">Gender:</label>
+                            <div id="genderD">
+                                <input type="radio" value="Male" name="txtGender" checked="checked" id="txtGenderM" class="form-control"
+                                       style="margin-top: -18px; margin-left: 88px;width: 20px; "> <label id="MaleLabel" style="margin-top: -36px;">Male</label>
+                                <input type="radio" value="Female" name="txtGender" id="txtGenderF" class="form-control" style="width: 18px; margin-left: 232px; margin-top: -36px;">
+                                <label id="FemaleLabel" style="margin-top: -36px;">Female</label>
+                            </div>
+
+
+                        </div>
+
+
+                        <div class="form-group imgDiv" >
+                            <label for="psw"> Image: </label>
+                            <input  type="file" class="form-control" name="userImg" required  class="filestyle" id="F" data-buttonText="Find file"/>
+                            <br />
+                            <img class="user_image" id="img_user" src="Img/Profile Pic 900.jpg"/>
+                        </div>
+
+
+                        <input type="submit" name="btnSignUp" value="Register" class="btn" style="width:200px;" id="SingUp">
+                        <a href="/login" value="Login" class="btn" style="position: absolute; width: 200px;margin-left: 103px;">Login</a>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4"></div>
+    </div>
+</div>
+
+
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="js/signUp.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+
+</body>
+</html>

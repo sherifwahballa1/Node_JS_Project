@@ -1,0 +1,87 @@
+@font-face{
+  font-family: 'kiona';
+  src: url('../Custom fonts/kiona.ttf') format('truetype');
+}
+
+@font-face{
+  font-family: 'cocogoose';
+  src: url('../custom fonts/cocogoose_light.ttf') format('truetype');
+}
+
+@font-face{
+  font-family: 'arm';
+  src: url('../Custom fonts/armwarmer.otf') format('Opentype');
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  line-height: 1.6em;
+  background-image: url('../img/image.png');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  font-family: 'cocogoose','Times New Roman', Times, serif;
+}
+
+.card{
+  margin-top: 100px;
+  width: 100%;
+  background: none !important;
+  color: whitesmoke;
+  border: 1px solid #fff !important;
+  border-top-left-radius: 30px !important;
+  border-bottom-right-radius:  30px !important;
+}
+
+.card:hover{
+  border-top-left-radius: 30px !important;
+  border-bottom-right-radius:  30px !important;
+  border: 1px solid #4063ba !important;
+}
+
+hr{
+  width: 70px;
+  border: 1.3px solid #fff !important;
+}
+
+.card-title{
+  text-align: center;
+}
+
+.card-title h2{
+  font-size: 35px;
+  font-family: 'kiona', 'Times New Roman', Times, serif;
+  padding-top: 20px;
+}
+
+.card-body{
+  margin: 0;
+  padding: 0;
+}
+
+.card-body label{
+  font-size: 14px;
+}
+
+.card-body .btn{
+  width: 100%;
+  padding: 10px;
+  color: #fff;
+  border: 1px solid #fff;
+  margin-top: 25px;
+  margin-bottom: 30px;
+}
+
+.card-body .btn:hover{
+  background: #fff;
+  color: black;
+  border: 1px solid #fff;
+}
+
+form input{
+  background: none !important;
+  border: 1px solid #fff  !important;
+  color: whitesmoke !important;
+}

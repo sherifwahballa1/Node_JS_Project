@@ -1,0 +1,72 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login Form | Welcome</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.css">
+
+    <style>
+         #err
+        {
+            color:red;
+        }
+        .card{
+            width: 350px;
+            left: -90px;
+            top:-70px;
+        }
+        .form-group{
+            margin-top: -40px;
+        }
+
+    </style>
+    <script>
+    document.getElementById('txtEmail').textContent='';
+    document.getElementById('txtPassword').textContent='';
+</script>
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-title">
+                    <h2>Login</h2>
+                    <hr class="my-4">
+                </div>
+                <div class="card-body">
+                    <form name="myForm" action="/login" method="post" class="myForm">
+                        <div class="form-group">
+                            <label for="Email">Email:</label>
+                            <input type="email"  required class="form-control" name="txtEmail2" id="txtEmail">
+                            <label style="position: relative;top: -69px;left: 54px;" id="err">{{err}}</label>
+                        </div>
+                        <div class="form-group" style="margin-top:20px;">
+                            <label for="psw">Password:</label>
+                            <input type="password"  required name="txtPassword2" id="txtPassword" class="form-control">
+                            <label id="passwordError" style="position: relative;top: -67px; left: 67px;">
+                            </label>
+                        </div>
+
+
+                        <input type="submit" name="login" value="Login" class="btn" style="width:100px;" id="SingUp">
+                        <a href="/" class="btn" style="position: absolute; width: 100px;margin-left: 103px;">Sign Up</a>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4"></div>
+    </div>
+</div>
+
+
+</body>
+</html>

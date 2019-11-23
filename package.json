@@ -1,0 +1,33 @@
+{
+  "name": "NodeProject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "alert-node": "^2.0.3",
+    "body-parser": "^1.19.0",
+    "ejs": "^2.7.1",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.1.6-alpha.6",
+    "express-session": "^1.17.0",
+    "express-validator": "^6.2.0",
+    "formidable": "^1.2.1",
+    "fs-extra": "^8.1.0",
+    "handlebars": "^4.5.1",
+    "hbs": "^4.0.6",
+    "joi": "^14.3.1",
+    "joi-objectid": "^3.0.1",
+    "js-alert": "^1.0.4",
+    "mongoose": "^5.7.9",
+    "multer": "^1.4.2",
+    "node-input-validator": "^4.1.0",
+    "path": "^0.12.7"
+  }
+}

@@ -1,0 +1,57 @@
+#nameError, #emailError, #passwordError
+        {
+            color:red;
+        }
+        .card{
+            width: 550px;
+            left: -90px;
+            top:-70px;
+        }
+        .form-group{
+            margin-top: -40px;
+        }
+        .form-group .user_image
+        {
+            border-radius:80%;
+            width:170px;
+            height:170px;
+            margin-left:150px;
+            margin-top:20px;
+        }
+
+    #nameError
+    {
+        position: absolute;
+        margin-top: -67px;
+        margin-left: 91px;
+    }
+
+    .mailDiv,.passwordDiv,.imgDiv,.genderDiv
+    {
+        margin-top: 20px;
+    }
+
+    #passwordError
+    {
+        position: absolute;
+        margin-top: -67px;
+        margin-left: 99px;
+    }
+
+.genderDiv #MaleLabel
+{
+    position: absolute;
+    margin-left: 121px;
+    font-size: 20px;
+}
+#genderD{
+
+    position: relative;
+    top: -12px;
+}
+.genderDiv #FemaleLabel{
+    position: absolute;
+    
+    font-size: 20px;
+    margin-left: 270px;
+}
